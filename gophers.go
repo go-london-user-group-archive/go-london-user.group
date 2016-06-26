@@ -19,6 +19,6 @@ func talksSignup(w http.ResponseWriter, r *http.Request) {
 }
 
 func eventsNext(w http.ResponseWriter, r *http.Request) {
-	w.Header().Add("Location", "https://skillsmatter.com/meetups/8186-london-go-usergroup")
+	w.Header().Add("Location", "https://skillsmatter.com/meetups/8195-london-go-usergroup")
 	w.WriteHeader(302)
 }
