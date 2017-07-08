@@ -4,6 +4,7 @@ description: "This is the subtitle for Golang UK 2017"
 featured_image: "/images/gouk.jpg"
 tags: ["conference", "london"]
 title: "Golang UK 2017"
+draft: true
 ---
 
 Post _on_ **Golang UK**
