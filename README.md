@@ -8,7 +8,9 @@ This website will be hosted somewhere as the generated content can be served as 
 - Git
 
 #### How to
-Clone this repository, and from its root run:
+- Clone this repository
+- Edit the file [config.toml](config.toml#L2) to change the `baseURL` to `http://localhost:1313/`
+- From the project root run:
 ```
 git clone git@github.com:budparr/gohugo-theme-ananke.git themes/gohugo-theme-ananke
 docker build -t go-london-user-group .
