@@ -1,5 +1,5 @@
 title = "Go London User Group"
-baseURL = "http://localhost:1313/"
+baseURL = "http://go-london-user.group"
 languageCode = "en-gb"
 theme = "gohugo-theme-ananke"
 # themesDir = "../themes/"
