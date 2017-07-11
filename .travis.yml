@@ -1,0 +1,17 @@
+language: go
+install: go get -v github.com/spf13/hugo
+script:
+- ls -al themes/
+- mkdir themes/gohugo-theme-ananke
+- git clone git@github.com:budparr/gohugo-theme-ananke.git themes/gohugo-theme-ananke
+- hugo
+deploy:
+  provider: gcs
+  access_key_id:
+    secure: pTi5Ad0vMkhU3d2xzc7Ot7Y7fNuczFadb6IlJ8SiQKD1XDnoVRAWqbhs4JnFUDwvWEF1bfdtT7r+ujkfaZxdVw691/LkM4eis5pGnitpsKAPzaih+f/LCZ2+09bcaf7NvUV25zZ58/Rcvqgo+JLfcieJau6y63MF9seivJnMh9A6dL5ohx/ZFbGFNWOjH8m1zARq0qr+tiOFNN1okCfYNeJLmQdC0WWld81i5bQCgvuM7hs2chbgvYzyaikyuvpitbiqAXFPuXSKqi+ymorV5qc+NyicRylAmLkmSXrdl/JMHBOK7lGvjY9F6KJOlMEypQsmvQvvO+hxVNmGCE14tEPROukCUX3IlGvLP/dQ0ZmgvBtp0ibfQFzml2WkQeSBHDSdcL7w2Cfhi5sGTjvnmMrEFXvhq64OyxzlTV+Z9zmMRCUcGXmWRjDF+5O5nNoFJ4QLe+nk7pUXzJa1Zvq+89Qzvi2kOp8hfo63xGwsQfHpaUnq7lLI1r4RlWlQItui0LAf19/XySQZD0R30oaBMyXRAMNRuCOBI/+DlfkufgqT97/iuATKZSpkDVGEnWhGzBFfLyC9Np/7IC74RrUetMY+sWoQ9fiIRnAbsAEcV1jo4YqEjpSaeZK5kGw83dshNFWzVe74yJP6DtxQKa7LqYjCOPKSCqJndbEaW6AAUbM=
+  secret_access_key:
+    secure: GH00fEZoI9xglLFK9tRJm2aNSw1pHUMCIPfZXjtBN/6piL0JUY0l8q+kMc8/Qja0FEuDmrArTVQakzHGWkbU4KY7ihT3QaLtUt2jUYQ8MW40Zdz+7EsCVnn72g+aiRI+xTDy4vWNxbqXcGaZDOjKOL1laUgrFl46A2f6nrOwsWI1wQ6eVBOsLbmNlAiDHAzx6KfCTJH/4DTUJp9CLixJb69CQ3WNM6zJWoK0lMFt3yxD/dW9O4IlywD1HVclHSUoPb52UtdXJax18NUfbV9LrSzi/4zgiWerpoQ024qj/+KIVYzpzGlWg0ekT/neAEp0Ce/snF0dsqaqbicIqjvTTHEwK9Qh7DLF/oi9bgkLuDa8WJsJB2vdiPM5YaQ6WwRsgZCA707hnREcwDEYwDeu8woq4NNpXJMcYWmKc5MSHJ/Vm1wVltY1Nfkxz2ttmZy9kK/zZTOb/0NCZuQSPxmKqUzpRNCD7zOZQP+ISZM2xYVhhoTiteEF7pZnwcBsXv5SYibLh2lhLYYBAkKexpBU+EnkhdiRfCZDMCmuENp28JUaC4ur72zaLFsAZvMg3jZs0ByZP8axYn1OKL/yBrtqK6zzC6MUgKTxCOVBbRPmi68Us+DUtNWnagyuXmSHuByHUEgR/gDdJTXAUXK7Ahn3xQ2J5n92qZH5Fgeu6K/KNig=
+  bucket: go-london-user.group
+  skip_cleanup: true
+  acl: public-read
+  local-dir: public
