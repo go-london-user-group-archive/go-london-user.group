@@ -12,3 +12,6 @@ deploy:
   skip_cleanup: true
   acl: public-read
   local-dir: public
+branches:
+  only:
+  - master
