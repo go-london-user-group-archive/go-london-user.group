@@ -1,18 +1,18 @@
-# Experimental London Gophers site
+[![Build Status](https://travis-ci.org/thoeni/go-london-user.group.svg?branch=master)](https://travis-ci.org/thoeni/go-london-user.group)
+
+# Go London User Group website
 
 ## To run it locally:
 This website will be hosted somewhere as the generated content can be served as static files, nevertheless it's possible to run it locally to check the styling of the articles.
 
 #### Pre-requisites
 - Docker
-- Git
 
 #### How to
 - Clone this repository
 - Edit the file [config.toml](config.toml#L2) to change the `baseURL` to `http://localhost:1313/`
 - From the project root run:
 ```
-git clone git@github.com:budparr/gohugo-theme-ananke.git themes/gohugo-theme-ananke
 docker build -t go-london-user-group .
 docker run --rm --name go-london-user-group -v `pwd`:"/usr/local/src/hugo/" -p 1313:1313 go-london-user-group
 ```
