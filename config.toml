@@ -1,5 +1,7 @@
 title = "Go London User Group"
+# For local deployment swap comments on the following two properties
 baseURL = "http://go-london-user.group"
+# baseURL = "http://localhost:1313"
 languageCode = "en-gb"
 theme = "gohugo-theme-ananke"
 # themesDir = "../themes/"
