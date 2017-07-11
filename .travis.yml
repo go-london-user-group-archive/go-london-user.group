@@ -1,9 +1,6 @@
 language: go
 install: go get -v github.com/spf13/hugo
 script:
-- ls -al themes/
-- mkdir themes/gohugo-theme-ananke
-- git clone git@github.com:budparr/gohugo-theme-ananke.git themes/gohugo-theme-ananke
 - hugo
 deploy:
   provider: gcs
