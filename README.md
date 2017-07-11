@@ -10,7 +10,7 @@ This website will be hosted somewhere as the generated content can be served as 
 
 #### How to
 - Clone this repository
-- Edit the file [config.toml](config.toml#L2) to change the `baseURL` to `http://localhost:1313/`
+- Edit the file [config.toml](config.toml#L2-L4) to uncomment `baseURL: http://localhost:1313/` and comment the remote one.
 - From the project root run:
 ```
 docker build -t go-london-user-group .
