@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/thoeni/go-london-user.group.svg?branch=master)](https://travis-ci.org/thoeni/go-london-user.group)
+[![Build Status](https://travis-ci.org/go-london-user-group/go-london-user.group.svg?branch=master)](https://travis-ci.org/go-london-user-group/go-london-user.group)
 
 # Go London User Group website
 
@@ -20,3 +20,6 @@ docker run --rm --name go-london-user-group -v `pwd`:"/usr/local/src/hugo/" -p 1
 Access `http://localhost:1313/`
 
 Hugo server running within the container will watch for any change in the repo and livereload it.
+
+## To deploy
+Any push to master will generate a new release live by triggering TravisCI job
