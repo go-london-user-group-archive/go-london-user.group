@@ -21,7 +21,7 @@ enableRobotsTXT = true
 [params]
   description = "The last theme you'll ever need. Maybe."
   facebook = ""
-  twitter = "https://twitter.com/LondonGophers"
+  twitter = "https://twitter.com/GoLondonUserGrp"
   instagram = ""
   youtube = ""
   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
